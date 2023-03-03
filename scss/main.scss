@@ -1,0 +1,52 @@
+/* SCSS HEX */
+$night: #141519ff;
+$gunmetal: #202833ff;
+$charcoal: #313D49;
+$slate-gray: #7C8898ff;
+$pumpkin: #FA7515ff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        color:#fff;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: 'Overpass', sans-serif;
+        border-radius: 10px;
+
+    .main-box, .thankyou-box {
+        text-align: left;
+        max-width: 400px;
+        padding: 40px;
+        background: $gunmetal;
+        border-radius: 20px;
+        border:1px white solid; //get rid of this
+    }
+
+    .thankyou-box {
+        text-align: center;
+    }
+
+    .main-box {
+
+        .rt-btn {
+            background: $charcoal;
+            color: $slate-gray;
+            border-radius: 100%;
+            padding:10px;
+            
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+}
