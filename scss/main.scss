@@ -23,26 +23,93 @@ body {
         border-radius: 10px;
 
     .main-box, .thankyou-box {
-        text-align: left;
+        // text-align: left;
         max-width: 400px;
         padding: 40px;
         background: $gunmetal;
-        border-radius: 20px;
-        border:1px white solid; //get rid of this
+        border-radius: 30px;
     }
 
     .thankyou-box {
         text-align: center;
+
+        .result {
+            display: inline-block;
+            border-radius: 50px;
+            padding: 5px 30px;
+            background: $charcoal;
+            color: $pumpkin;
+            margin: 25px 0;
+        }
+
+        p {
+            line-height: 1.6;
+            color:$slate-gray;
+            margin-top: 10px;
+        }
     }
 
     .main-box {
+        text-align: center;
+
+        img, h2, p {
+            display: block;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin:16px 0;
+        }
+
+        p {
+            color:$slate-gray;
+        }
+
+        img {
+            border-radius: 100%;
+            padding: 10px;
+            background: $charcoal;
+        }
 
         .rt-btn {
+            display: inline-block;
             background: $charcoal;
             color: $slate-gray;
-            border-radius: 100%;
-            padding:10px;
-            
+            border-radius: 50%;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            margin: 25px 6px;
+            transition-duration: 0.4s;
+            line-height: .6;
+        }
+
+        .rt-btn:hover {
+            background: $pumpkin;
+            color: #fff;
+        }
+
+        .rt-btn:focus {
+            background: $slate-gray;
+            color: #fff;
+        }
+
+        .sub-btn {
+            background: $pumpkin;
+            cursor: pointer;
+            font-family: 'Overpass', sans-serif;
+            border: none;
+            color :#fff;
+            padding: 9px 30px;
+            width: 100%;
+            border-radius: 50px;
+            transition-duration: 0.4s;
+        }
+
+        .sub-btn:hover {
+            background: #fff;
+            color:$pumpkin;
         }
     }
 
