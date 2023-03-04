@@ -1,8 +1,8 @@
 const mainBox = document.querySelector('.main-box');
 const thankyouBox = document.querySelector('.thankyou-box');
 const submitBtn = document.querySelector('.sub-btn');
-const rtBtn = document.querySelectorAll('.rt-btn');
-const rating = document.getElementById('#rating');
+const rating = document.getElementById('rating');
+const rates = document.querySelectorAll('.rt-btn')
 
 submitBtn.addEventListener('click', () => {
     thankyouBox.classList.remove('hide');
